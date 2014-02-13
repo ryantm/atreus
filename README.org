@@ -1,0 +1,83 @@
+* Atreus Keyboard
+
+The [[http://ergodox.org][Ergodox]] keyboard is an absolutely fantastic design; I use it every
+day at my office. However, I like to work from coffee shops and other
+locations frequently, and I thought I might try my hand at designing
+something a little more portable. The great thing about assembling
+my Ergodox is that it taught be there's really nothing magical about
+it; it's just a piece of circuitry with a bunch of switches read by a
+microcontroller that speaks the USB HID interface.
+
+The Atreus is meant to be complementary to the Ergodox as something
+smaller, cheaper, and more travel-friendly. The case measures 25x11cm
+and lacks even a number row, relying heavily upon the fn key. There is
+no PCB in this design, requiring [[http://deskthority.net/workshop-f7/brownfox-step-by-step-t6050.html][a manual matrix wiring approach]].
+However, given that there are only 4 rows and 10 columns, this isn't
+as daunting as it could be.
+
+** Layout
+
+See [[file:layout.txt][layout.txt]] for the key positions. Only a handful of punctuation
+marks (and no digits) available unshifted, and all the modifiers are
+on the bottom row.
+
+I type in Dvorak but prefer to do the remapping in software rather than
+hardware so I don't have to change layouts when I switch to my
+laptop's internal keyboard.
+
+** Parts
+
+*** Switches
+
+I strongly prefer the feel and sound of [[http://www.digikey.com/product-detail/en/MX1A-E1NW/CH197-ND/20180][Cherry MX blue]] switches for typing.
+
+However, I like having linear switches on the modifier keys (ctrl,
+alt, super, shift, and fn). [[http://www.wasdkeyboards.com/index.php/products/keyboard-parts/cherry-mx-red-keyswitch-mx1a-l1nn-linear.html][Cherry MX red switches]] are nice and light
+but are difficult to find. Cherry black switches are cheaper and
+easier to source, but may be too heavy, especially for keys under
+pinky fingers.
+
+This layout has five modifiers and 35 non-modifiers.
+
+*** Diodes
+
+In order to avoid ghosting, each switch needs a [[http://www.digikey.com/product-detail/en/1N4148TR/1N4148FSTR-ND/458811][diode]].
+
+*** Microcontroller
+
+I'll be using a Teensy 3 since I have one on hand, but an [[https://www.adafruit.com/products/1315][Arduino
+Micro]] or [[http://www.pjrc.com/teensy/index.html][Teensy 2]] would work too.
+
+*** Keycaps
+
+This [[http://keyshop.pimpmykeyboard.com/product/dsa-pbt-blank-sets][DSA-shaped base set]] has 52 1x keys plus a few extras we won't use.
+
+** Case
+
+Layered laser-cut acrylic; see [[file:case.svg][case.svg]]. 2mm for the bottom layer, 6mm for the others.
+
+** Firmware
+
+TODO: Uhhh...
+
+** BOM
+
+- 35 MX Blues @ $1.00
+- 5 MX Reds @ $2.00
+- 40 diodes @ $0.052
+- Base keycap set: $18.00
+- Teensy 2: $16
+
+=(+ 35 10 (* 40 0.052) 18 16)= -> $81.08 plus shipping and acrylic
+
+- Digikey shipping: $5.32 in the US
+- WASD (red switches) shipping: ??
+- Signature Plastics shipping: ??
+- Acrylic materials: ??
+- Acrylic laser cutting: ??
+
+** License
+
+Copyright © 2014 Phil Hagelberg
+
+Released under the [[http://www.ohwr.org/projects/cernohl/wiki][CERN Open Hardware License 1.2]]
