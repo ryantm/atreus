@@ -80,4 +80,4 @@ TODO: Uhhh...
 
 Copyright © 2014 Phil Hagelberg
 
-Released under the [[http://www.ohwr.org/projects/cernohl/wiki][CERN Open Hardware License 1.2]]
+Released under the [[https://www.gnu.org/licenses/gpl.html][GNU GPL version 3]]
