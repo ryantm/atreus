@@ -1,25 +1,44 @@
 * Atreus Keyboard
 
 The [[http://ergodox.org][Ergodox]] keyboard is an absolutely fantastic design; I use it every
-day at my office. However, I like to work from coffee shops and other
-locations frequently, and I thought I might try my hand at designing
-something a little more portable. The great thing about assembling
-my Ergodox is that it taught be there's really nothing magical about
-it; it's just a piece of circuitry with a bunch of switches read by a
-microcontroller that speaks the USB HID interface.
+day at my office. However, I like to work away from the office
+frequently, and I thought I might try my hand at designing something a
+little more portable. The great thing about assembling my Ergodox is
+that it taught be there's really nothing magical about it; it's just a
+piece of circuitry with a bunch of switches read by a microcontroller
+that speaks the USB HID interface.
 
 The Atreus is meant to be complementary to the Ergodox as something
 smaller, cheaper, and more travel-friendly. The case measures 25x11cm
 and lacks even a number row, relying heavily upon the fn key. There is
 no PCB in this design, requiring [[http://deskthority.net/workshop-f7/brownfox-step-by-step-t6050.html][a manual matrix wiring approach]].
 However, given that there are only 4 rows and 10 columns, this isn't
-as daunting as it could be.
+as daunting as it could be. It also allows for quicker iteration on
+design changes since alterations only require cutting a new case.
+
+I've seen a number of existing DIY 40% keyboard designs, but all of
+them stagger the rows, which I find very annoying now that I've gotten
+used to the columnar layout of the Ergodox. In addition, all the
+designs I've seen waste a lot of room on the space bar, failing to
+take into account the fact that the thumb is the strongest and most
+versatile of the fingers. This design avoids both these problems.
 
 ** Layout
 
-See [[file:layout.txt][layout.txt]] for the key positions. Only a handful of punctuation
-marks (and no digits) available unshifted, and all the modifiers are
-on the bottom row.
+Only a handful of punctuation marks (and no digits) available
+unshifted, and all the modifiers are on the bottom row.
+
+ :    q     w     e     r     t   ||   y     u     i     o    p
+ :    a     s     d     f     g   ||   h     j     k     l    ;
+ :    z     x     c     v     b   ||   n     m     ,     .    /
+ :  shift  tab  super ctrl  bksp  || space  alt  enter  esc  fn
+
+The numbers and most punctuation are on the fn layer:
+
+ :    1     2     3     4    5    ||   6     7     8     9    0
+ :    !     @     #     $    %    ||   ^     &     *     (    )
+ :    _     -     =     +    /    ||   ?     {     }     [    ]
+ :          ~                \    ||   `         pgup   pgdn
 
 I type in Dvorak but prefer to do the remapping in software rather than
 hardware so I don't have to change layouts when I switch to my
@@ -29,7 +48,8 @@ laptop's internal keyboard.
 
 *** Switches
 
-I strongly prefer the feel and sound of [[http://www.digikey.com/product-detail/en/MX1A-E1NW/CH197-ND/20180][Cherry MX blue]] switches for typing.
+I strongly prefer the feel and sound of tactile [[http://www.digikey.com/product-detail/en/MX1A-E1NW/CH197-ND/20180][Cherry MX blue]]
+switches for typing.
 
 However, I like having linear switches on the modifier keys (ctrl,
 alt, super, shift, and fn). [[http://www.wasdkeyboards.com/index.php/products/keyboard-parts/cherry-mx-red-keyswitch-mx1a-l1nn-linear.html][Cherry MX red switches]] are nice and light
@@ -54,7 +74,8 @@ This [[http://keyshop.pimpmykeyboard.com/product/dsa-pbt-blank-sets][DSA-shaped 
 
 ** Case
 
-Layered laser-cut acrylic; see [[file:case.svg][case.svg]]. 2mm for the bottom layer, 6mm for the others.
+Layered laser-cut acrylic; see [[file:case.svg][case.svg]]. 2mm for the bottom layer, 6mm
+for the others.
 
 ** Firmware
 
@@ -70,9 +91,9 @@ TODO: Uhhh...
 
 =(+ 35 10 (* 40 0.052) 18 16)= -> $81.08 plus shipping and acrylic
 
-- Digikey shipping: $5.32 in the US
+- Digikey (blues and diodes) shipping: $5.32 in the US
 - WASD (red switches) shipping: ??
-- Signature Plastics shipping: ??
+- Signature Plastics (keycaps) shipping: ??
 - Acrylic materials: ??
 - Acrylic laser cutting: ??
 
