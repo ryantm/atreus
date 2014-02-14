@@ -23,6 +23,8 @@ designs I've seen waste a lot of room on the space bar, failing to
 take into account the fact that the thumb is the strongest and most
 versatile of the fingers. This design avoids both these problems.
 
+[[preview.png]]
+
 ** Layout
 
 Only a handful of punctuation marks (and no digits) available
