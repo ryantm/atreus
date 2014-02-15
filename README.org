@@ -76,8 +76,8 @@ This [[http://keyshop.pimpmykeyboard.com/product/dsa-pbt-blank-sets][DSA-shaped 
 
 ** Case
 
-Layered laser-cut acrylic; see [[file:case.svg][case.svg]]. 2mm for the bottom layer, 6mm
-for the others.
+Layered laser-cut acrylic; see [[file:case.svg][case.svg]]. 2mm for the bottom and top
+layers, 6mm for the others.
 
 ** Firmware
 
