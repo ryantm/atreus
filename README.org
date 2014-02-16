@@ -99,8 +99,12 @@ This [[http://keyshop.pimpmykeyboard.com/product/dsa-pbt-blank-sets][DSA-shaped 
 
 ** Case
 
-Layered laser-cut acrylic; see [[file:case.svg][case.svg]]. 2mm for the bottom and top
-layers, 6mm for the others.
+Layered laser-cut acrylic; see [[file:case.svg][case.svg]].
+
+The first two shapes in the case file are the top and bottom covers;
+these should be cut on 3mm acrylic. The third is the spacer that goes
+under the fourth, which is the plate on which the switches are
+mounted. These should be cut in 5mm or 6mm acrylic.
 
 ** Firmware
 
