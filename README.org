@@ -16,9 +16,9 @@ However, given that there are only 4 rows and 10 columns, this isn't
 as daunting as it could be. It also allows for quicker iteration on
 design changes since alterations only require cutting a new case.
 
-I've seen a number of existing DIY 40% keyboard designs, but all of
+I've seen a number of existing DIY 40% keyboard designs, but most of
 them stagger the rows, which I find very annoying now that I've gotten
-used to the columnar layout of the Ergodox. In addition, all the
+used to the columnar layout of the Ergodox. In addition, many of the
 designs I've seen waste a lot of room on the space bar, failing to
 take into account the fact that the thumb is the strongest and most
 versatile of the fingers. This design avoids both these problems.
