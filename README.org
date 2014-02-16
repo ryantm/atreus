@@ -37,10 +37,10 @@ unshifted, and all the modifiers are on the bottom row.
 
 The numbers and most punctuation are on the fn layer:
 
- :    1     2     3     4    5    ||       6     7     8     9    0
- :    !     @     #     $    %    ||       ^     &     *     (    )
- :    _     -     =     +    /    ||       ?     {     }     [    ]
- :          ~           \         ||   `
+ :    1     2     3     4    5        ||         6     7     8     9    0
+ :    !     @     #     $    %        ||         ^     &     *     (    )
+ :    _     -     =     +    /        ||         ?     {     }     [    ]
+ :          ~           \             ||    `
 
 I type in Dvorak but prefer to do the remapping in software rather than
 hardware so I don't have to change layouts when I switch to my
@@ -55,9 +55,9 @@ This layout has five modifiers and 37 non-modifiers.
 I strongly prefer the feel and sound of tactile [[http://www.digikey.com/product-detail/en/MX1A-E1NW/CH197-ND/20180][Cherry MX blue]]
 switches for typing. However, I like having linear switches on the
 modifier keys (ctrl, alt, super, shift, and fn). [[http://www.wasdkeyboards.com/index.php/products/keyboard-parts/cherry-mx-red-keyswitch-mx1a-l1nn-linear.html][Cherry MX red
-switches]] are nice and light but are difficult to find. [[http://www.digikey.com/product-detail/en/MX1A-11NW/CH160-ND/91134][Cherry MX black
-switches]] are cheaper and easier to source, but may be too heavy,
-especially for keys under pinky fingers.
+switches]] are nice and light but are expensive and difficult to
+find. [[http://www.digikey.com/product-detail/en/MX1A-11NW/CH160-ND/91134][Cherry MX black switches]] are cheaper and easier to source, but
+may be too heavy, especially for keys under pinky fingers.
 
 One trick is take the springs from some of your blue switches and
 trade them with the springs from your black switches. The blacks then
@@ -79,6 +79,10 @@ for non-modifier thumb keys.
 - esc: blue
 - page up: blue
 - page down: blue
+
+If you don't bother with the spring replacement step mentioned above,
+use blues instead of greens and blacks instead of reds. Or just use
+whatever switches you want; it's your board!
 
 *** Diodes
 
