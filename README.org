@@ -30,17 +30,17 @@ versatile of the fingers. This design avoids both these problems.
 Only a handful of punctuation marks (and no digits) available
 unshifted, and all the modifiers are on the bottom row.
 
- :    q     w     e     r     t   ||   y     u     i     o    p
- :    a     s     d     f     g   ||   h     j     k     l    ;
- :    z     x     c     v     b   ||   n     m     ,     .    /
- :  shift  tab  super ctrl  bksp  || space  alt  enter  esc  fn
+ :    q     w     e     r     t       ||         y     u     i     o    p
+ :    a     s     d     f     g       ||         h     j     k     l    ;
+ :    z     x     c     v     b       ||         n     m     ,     .    /
+ :  shift  super tab  bksp  ctrl  fn  || space  alt  enter  esc  pgup  pgdn
 
 The numbers and most punctuation are on the fn layer:
 
- :    1     2     3     4    5    ||   6     7     8     9    0
- :    !     @     #     $    %    ||   ^     &     *     (    )
- :    _     -     =     +    /    ||   ?     {     }     [    ]
- :          ~                \    ||   `         pgup   pgdn
+ :    1     2     3     4    5    ||       6     7     8     9    0
+ :    !     @     #     $    %    ||       ^     &     *     (    )
+ :    _     -     =     +    /    ||       ?     {     }     [    ]
+ :          ~           \         ||   `
 
 I type in Dvorak but prefer to do the remapping in software rather than
 hardware so I don't have to change layouts when I switch to my
@@ -50,16 +50,35 @@ laptop's internal keyboard.
 
 *** Switches
 
+This layout has five modifiers and 37 non-modifiers.
+
 I strongly prefer the feel and sound of tactile [[http://www.digikey.com/product-detail/en/MX1A-E1NW/CH197-ND/20180][Cherry MX blue]]
-switches for typing.
+switches for typing. However, I like having linear switches on the
+modifier keys (ctrl, alt, super, shift, and fn). [[http://www.wasdkeyboards.com/index.php/products/keyboard-parts/cherry-mx-red-keyswitch-mx1a-l1nn-linear.html][Cherry MX red
+switches]] are nice and light but are difficult to find. [[http://www.digikey.com/product-detail/en/MX1A-11NW/CH160-ND/91134][Cherry MX black
+switches]] are cheaper and easier to source, but may be too heavy,
+especially for keys under pinky fingers.
 
-However, I like having linear switches on the modifier keys (ctrl,
-alt, super, shift, and fn). [[http://www.wasdkeyboards.com/index.php/products/keyboard-parts/cherry-mx-red-keyswitch-mx1a-l1nn-linear.html][Cherry MX red switches]] are nice and light
-but are difficult to find. Cherry black switches are cheaper and
-easier to source, but may be too heavy, especially for keys under
-pinky fingers.
+One trick is take the springs from some of your blue switches and
+trade them with the springs from your black switches. The blacks then
+become the equivalent of reds, and the blues become MX green switches,
+which are a heavier variant of blues. These are typically used for
+space bars on boards that otherwise use blues. They could be suitable
+for non-modifier thumb keys.
 
-This layout has five modifiers and 35 non-modifiers.
+**** Recommended switch types for bottom row
+- shift: red
+- super: red
+- tab: blue
+- bksp: green
+- ctrl: black
+- fn: black
+- space: green
+- alt: black
+- enter: blue
+- esc: blue
+- page up: blue
+- page down: blue
 
 *** Diodes
 
@@ -85,18 +104,17 @@ TODO: Uhhh...
 
 ** BOM
 
-- 35 MX Blues @ $1.00
-- 5 MX Reds @ $2.00
-- 40 diodes @ $0.052
+- 37 MX Blues @ $1.00
+- 5 MX Blacks @ 0.80
+- 42 diodes @ $0.052
 - Base keycap set: $18.00
 - Teensy 2: $16
 
-=(+ 35 10 (* 40 0.052) 18 16)= -> $81.08 plus shipping and acrylic
+=(+ 37 (* 5 0.8) (* 42 0.052) 18 16 11)= -> 88.18 plus shipping and cutting
 
-- Digikey (blues and diodes) shipping: $5.32 in the US
-- WASD (red switches) shipping: ??
+- Digikey (switches and diodes) shipping: $5.32 in the US
 - Signature Plastics (keycaps) shipping: ??
-- Acrylic materials: ??
+- Acrylic materials: $11 (cheaper if transparent acrylic is used)
 - Acrylic laser cutting: ??
 
 ** License
