@@ -11,7 +11,7 @@ that speaks the USB HID interface.
 The Atreus is meant to be complementary to the Ergodox as something
 smaller, cheaper, and more travel-friendly. The case measures 25x11cm
 and lacks even a number row, relying heavily upon the fn key. There is
-no PCB in this design, requiring [[http://deskthority.net/workshop-f7/brownfox-step-by-step-t6050.html][a manual matrix wiring approach]].
+no PCB in this design, requiring [[http://wiki.geekhack.org/index.php?title=Hard-Wiring_How-To.html][a manual matrix wiring approach]].
 However, given that there are only 4 rows and 11 columns, this isn't
 as daunting as it could be. It also allows for quicker iteration on
 design changes since alterations only require cutting a new case.
@@ -67,18 +67,10 @@ space bars on boards that otherwise use blues. They could be suitable
 for non-modifier thumb keys.
 
 **** Recommended switch types for bottom row
-- shift: red
-- super: red
-- tab: blue
-- bksp: green
-- ctrl: black
-- fn: black
-- space: green
-- alt: black
-- enter: blue
-- esc: blue
-- page up: blue
-- page down: blue
+
+- red: shift, super
+- black: fn, ctrl, alt
+- green: space, backspace, enter?
 
 If you don't bother with the spring replacement step mentioned above,
 use blues instead of greens and blacks instead of reds. Or just use
@@ -90,12 +82,17 @@ In order to avoid ghosting, each switch needs a [[http://www.digikey.com/product
 
 *** Microcontroller
 
-I'll be using a Teensy 3 since I have one on hand, but an [[https://www.adafruit.com/products/1315][Arduino
-Micro]] or [[http://www.pjrc.com/teensy/index.html][Teensy 2]] would work too.
+An [[https://www.adafruit.com/products/1315][Arduino Micro]] or [[http://www.pjrc.com/teensy/index.html][Teensy 2]] is recommended.
 
 *** Keycaps
 
 This [[http://keyshop.pimpmykeyboard.com/product/dsa-pbt-blank-sets][DSA-shaped base set]] has 52 1x keys plus a few extras we won't use.
+
+*** Screws
+
+Seven M3 machine screws hold the whole thing together. The length of
+the screws depends on the thickness of the materials you use for the
+case.
 
 ** Case
 
@@ -108,24 +105,44 @@ these should be cut on 3mm acrylic (black in the photo). The third is
 the spacer that goes under the fourth, which is the plate on which the
 switches are mounted. These should be cut in 4.5mm.
 
+On a 100W Epilog laser, the 3mm layers cut in about a minute and a
+half. I did a run with 6mm acrylic of the other layers which took
+nearly 6 minutes, but with the recommended 4.5mm thickness it should
+be closer to four or five.
+
 ** Firmware
 
-TODO: Uhhh...
+My [[https://github.com/technomancy/tmk_keyboard/tree/atreus][fork of the tmk firmware]] has support for the Atreus
+layout. Currently only supports software-dvorak--the default layer is
+all qwerty, but the punctuation keys send keycodes assuming that the
+qwerty->dvorak transformation will be applied to them, so they don't
+make sense otherwise.
 
-** BOM
+** Recommended Bill of Materials
 
 - 37 MX Blues @ $1.00
 - 5 MX Blacks @ 0.80
 - 42 diodes @ $0.052
 - Base keycap set: $18.00
 - Teensy 2: $16
-- Acrylic materials: $11 (cheaper if transparent acrylic is used)
-- Acrylic laser cutting: $18 at $3/min
+- Acrylic materials: $11
+- Acrylic laser cutting: 6 at $3/min (varies by thickness of acrylic)
 
-=(+ 37 (* 5 0.8) (* 42 0.052) 18 16 11 18)= -> 106.18 plus shipping and cutting
+=(+ 37 (* 5 0.8) (* 42 0.052) 18 16 11 (* 3 6))= -> 106.18 plus tax/shipping
 
-- Digikey (switches and diodes) shipping: $5.32 in the US
-- Signature Plastics (keycaps) shipping: ??
+- Digikey (switches and diodes) US shipping: $5.32
+- Signature Plastics (keycaps) shipping: $8.00
+- PJRC (teensy) shipping: $3.03
+
+** Cost-saving Options
+
+There are a few ways to get the cost under $100. Using all black
+switches brings the total to $98, but I strongly recommend against
+this unless you're already familiar with the feel of the various
+Cherry switches. Using wood for the case will reduce both the
+materials cost as well as the amount of time needed to cut the
+case. Replacing the colored acrylic with transparent might also save a
+few dollars.
 
 ** License
 
