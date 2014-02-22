@@ -64,17 +64,7 @@ trade them with the springs from your black switches. The blacks then
 become the equivalent of reds, and the blues become MX green switches,
 which are a heavier variant of blues. These are typically used for
 space bars on boards that otherwise use blues. They could be suitable
-for non-modifier thumb keys.
-
-**** Recommended switch types for bottom row
-
-- red: shift, super
-- black: fn, ctrl, alt
-- green: space, backspace, enter?
-
-If you don't bother with the spring replacement step mentioned above,
-use blues instead of greens and blacks instead of reds. Or just use
-whatever switches you want; it's your board!
+for non-modifier thumb keys like backspace, space, and enter.
 
 *** Diodes
 
@@ -82,17 +72,21 @@ In order to avoid ghosting, each switch needs a [[http://www.digikey.com/product
 
 *** Microcontroller
 
-An [[https://www.adafruit.com/products/1315][Arduino Micro]] or [[http://www.pjrc.com/teensy/index.html][Teensy 2]] is recommended.
+An [[http://www.digikey.com/product-search/en/programmers-development-systems/evaluation-boards-embedded-mcu-dsp/2621773?k=arduino%20micro][Arduino Micro]] or [[http://www.pjrc.com/teensy/index.html][Teensy 2]] is recommended. Be sure to get one
+without headers so it will fit in between the bottom layer and the plate.
 
 *** Keycaps
 
-This [[http://keyshop.pimpmykeyboard.com/product/dsa-pbt-blank-sets][DSA-shaped base set]] has 52 1x keys plus a few extras we won't use.
+This [[http://keyshop.pimpmykeyboard.com/product/dsa-pbt-blank-sets][DSA-shaped base set]] from Signature Plastics has 52 1x keys plus a
+few extras we won't use. It claims on that page to contain only one
+deep key, but my shipment contained two, which I put under the index
+finger keys to help guide your hands without looking.
 
 *** Screws
 
-Seven M3 machine screws hold the whole thing together. The length of
-the screws depends on the thickness of the materials you use for the
-case.
+Seven M3 machine screws and nuts hold the whole thing together. The
+length of the screws depends on the thickness of the materials you use
+for the case.
 
 ** Case
 
@@ -103,7 +97,9 @@ Layered laser-cut acrylic; see [[file:case.svg][case.svg]].
 The first two shapes in the case file are the top and bottom covers;
 these should be cut on 3mm acrylic (black in the photo). The third is
 the spacer that goes under the fourth, which is the plate on which the
-switches are mounted. These should be cut in 4.5mm.
+switches are mounted. These should be cut in 6mm, especially the
+spacer, which needs to be at least as thick as the micro USB cable you
+connect to the microcontroller.
 
 On a 100W Epilog laser, the 3mm layers cut in about a minute and a
 half. I did a run with 6mm acrylic of the other layers which took
@@ -124,13 +120,13 @@ make sense otherwise.
 - 5 MX Blacks @ 0.80
 - 42 diodes @ $0.052
 - Base keycap set: $18.00
-- Teensy 2: $16
+- Teensy 2: $16 OR Arduino Micro: $25
 - Acrylic materials: $11
 - Acrylic laser cutting: 6 at $3/min (varies by thickness of acrylic)
 
 =(+ 37 (* 5 0.8) (* 42 0.052) 18 16 11 (* 3 6))= -> 106.18 plus tax/shipping
 
-- Digikey (switches and diodes) US shipping: $5.32
+- Digikey (switches, diodes, arduino?) US shipping: $5.32
 - Signature Plastics (keycaps) shipping: $8.00
 - PJRC (teensy) shipping: $3.03
 
