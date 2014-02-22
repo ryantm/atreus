@@ -13,8 +13,7 @@ smaller, cheaper, and more travel-friendly. The case measures 25x11cm
 and lacks even a number row, relying heavily upon the fn key. There is
 no PCB in this design, requiring [[http://wiki.geekhack.org/index.php?title=Hard-Wiring_How-To.html][a manual matrix wiring approach]].
 However, given that there are only 4 rows and 11 columns, this isn't
-as daunting as it could be. It also allows for quicker iteration on
-design changes since alterations only require cutting a new case.
+as daunting as it could be.
 
 I've seen a number of existing DIY 40% keyboard designs, but most of
 them stagger the rows, which I find very annoying now that I've gotten
@@ -103,8 +102,7 @@ connect to the microcontroller.
 
 On a 100W Epilog laser, the 3mm layers cut in about a minute and a
 half. I did a run with 6mm acrylic of the other layers which took
-nearly 6 minutes, but with the recommended 4.5mm thickness it should
-be closer to four or five.
+nearly 6 minutes.
 
 ** Firmware
 
@@ -121,10 +119,11 @@ make sense otherwise.
 - 42 diodes @ $0.052
 - Base keycap set: $18.00
 - Teensy 2: $16 OR Arduino Micro: $25
+- USB Mini cable: $1.94
 - Acrylic materials: $11
 - Acrylic laser cutting: 6 at $3/min (varies by thickness of acrylic)
 
-=(+ 37 (* 5 0.8) (* 42 0.052) 18 16 11 (* 3 6))= -> 106.18 plus tax/shipping
+=(+ 37 (* 5 0.8) (* 42 0.052) 18 16 1.94 11 (* 3 7.5))= -> $112.62 plus tax/shipping
 
 - Digikey (switches, diodes, arduino?) US shipping: $5.32
 - Signature Plastics (keycaps) shipping: $8.00
@@ -133,12 +132,15 @@ make sense otherwise.
 ** Cost-saving Options
 
 There are a few ways to get the cost under $100. Using all black
-switches brings the total to $98, but I strongly recommend against
-this unless you're already familiar with the feel of the various
-Cherry switches. Using wood for the case will reduce both the
-materials cost as well as the amount of time needed to cut the
-case. Replacing the colored acrylic with transparent might also save a
-few dollars.
+switches brings it down, but I strongly recommend against this unless
+you're already familiar with the feel of the various Cherry
+switches. Using wood for the case will reduce both the materials cost
+as well as the amount of time needed to cut the case.
+
+Replacing the colored acrylic with transparent might also save a few
+dollars. You could also use thinner acrylic for the switch plate too;
+I cut mine in 4.5mm. A thinner spacer is inadvisable; even with 6mm
+it's pretty tight.
 
 ** License
 
