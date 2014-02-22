@@ -33,7 +33,7 @@ unshifted, and all the modifiers are on the bottom row.
  :    q     w     e     r     t       ||       y     u     i     o    p
  :    a     s     d     f     g       ||       h     j     k     l    ;
  :    z     x     c     v     b       ||       n     m     ,     .    /
- :  shift  esc   tab   fn   bksp ctrl || alt space enter pgup  pgdn super
+ :   esc   tab    fn  shift bksp ctrl || alt space enter super pgup  pgdn
 
 The numbers and most punctuation are on the fn layer:
 
