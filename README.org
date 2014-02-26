@@ -11,7 +11,7 @@ that speaks the USB HID interface.
 The Atreus is meant to be complementary to the Ergodox as something
 smaller, cheaper, and more travel-friendly. The case measures 25x11cm
 and lacks even a number row, relying heavily upon the fn key. There is
-no PCB in this design, requiring [[http://wiki.geekhack.org/index.php?title=Hard-Wiring_How-To.html][a manual matrix wiring approach]].
+no PCB in this design, requiring [[http://wiki.geekhack.org/index.php?title=Hard-Wiring_How-To][a manual matrix wiring approach]].
 However, given that there are only 4 rows and 11 columns, this isn't
 as daunting as it could be.
 
